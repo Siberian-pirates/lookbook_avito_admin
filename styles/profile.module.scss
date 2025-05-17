@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #f2f5f8;
+
+  .avatar {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #dbdfe4;
+  }
+
+  .info {
+    .name {
+      font-size: 14px;
+      font-weight: 500;
+      color: #1f1f1f;
+    }
+
+    .role {
+      font-size: 13px;
+      font-weight: 400;
+      color: #a2a2ac;
+    }
+  }
+}
