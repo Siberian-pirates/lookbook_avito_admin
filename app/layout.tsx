@@ -1,9 +1,11 @@
+import "@ant-design/v5-patch-for-react-19";
+
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 
 import "@/styles/globals/normalize.css";
 import "@/styles/globals/globals.css";
-import { ConfigProvider } from "antd";
+import { AntdProvider } from "@/components";
 
 const MontserratFont = Montserrat({
   variable: "--font-montserrat",
@@ -23,26 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={MontserratFont.variable}>
-        <ConfigProvider
-          theme={{
-            token: { fontFamily: "var(--font-montserrat)" },
-            components: {
-              Menu: {
-                colorSplit: "transparent",
-                fontSize: 15,
-                iconSize: 18,
-                iconMarginInlineEnd: 12,
-              },
-              Breadcrumb: {
-                fontSize: 20,
-              },
-            },
-          }}
-        >
-          {children}
-        </ConfigProvider>
-      </body>
+      <AntdProvider>
+        <body className={MontserratFont.variable}>{children}</body>
+      </AntdProvider>
     </html>
   );
 }

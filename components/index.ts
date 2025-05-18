@@ -1,3 +1,5 @@
+export * from "./shared/antd-provider";
+export * from "./shared/protected-route";
 export * from "./shared/header";
 export * from "./shared/leftbar";
 export * from "./shared/page-title";

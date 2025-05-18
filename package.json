@@ -11,6 +11,7 @@
   "dependencies": {
     "@ant-design/icons": "5.x",
     "@ant-design/nextjs-registry": "^1.0.2",
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
     "antd": "^5.25.1",
     "axios": "^1.9.0",
     "dart-sass": "^1.25.0",

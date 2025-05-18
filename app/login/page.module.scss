@@ -2,16 +2,22 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  .title {
-    margin-bottom: 40px;
-    font-weight: 600;
-  }
+  .container {
+    width: 280px;
+    padding: 24px;
+    border-radius: 12px;
+    background-color: #fff;
 
-  .button {
-    margin-inline: auto;
+    .title {
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+
+    .button {
+      margin-inline: auto;
+    }
   }
 }
