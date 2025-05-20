@@ -11,7 +11,7 @@ export default function PanelLayout({
         <div className="dashboard_content">
           <PageTitle />
           <div className="dashboard_content_page-wrapper">
-            <Space className="dashboard_content_page">{children}</Space>
+            <div className="dashboard_content_page">{children}</div>
           </div>
         </div>
       </div>
